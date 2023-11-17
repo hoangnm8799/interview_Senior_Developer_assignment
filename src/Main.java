@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("You can interact with solution via a simple set of commands :\nCASH_IN + Amount\nLIST_BILL\nPAY + Bill Ids (BillNo)\nDUE_DATE\nSCHEDULE + Bill Id + Date dd/MM/yyyy\nLIST_PAYMENT\nSEARCH_BILL_BY_PROVIDER + Provider name\nEXIT");
         Scanner scanner = new Scanner(System.in);
         boolean exit = false;
         PaymentService paymentService = new PaymentServiceImpl();
